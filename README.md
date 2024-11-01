@@ -1,66 +1,105 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🌟 Toyota Thập Nhất Phong - Hệ thống Quản lý KPI và Tích điểm Nhân viên/Khách hàng 🌟
 
-## About Laravel
+## 📝 Giới thiệu
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Toyota Thập Nhất Phong** cung cấp hệ thống quản lý **KPI và tích điểm** cho:
+- 👔 **Nhân viên**: Đánh giá và tích điểm dựa trên hiệu suất làm việc.
+- 💳 **Khách hàng**: Tự động tích điểm từ hóa đơn thanh toán, cho phép đổi điểm để nhận quà.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Dự án mang lại giá trị lâu dài thông qua phương pháp **Kaizen** (cải tiến liên tục) và **Hoshin Kanri** (quản lý chiến lược), giúp nâng cao hiệu suất làm việc và cải thiện sự hài lòng của khách hàng.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Tính năng chính
 
-## Learning Laravel
+| Tính năng                         | Mô tả                                                                                  |
+|-----------------------------------|----------------------------------------------------------------------------------------|
+| **Quản lý Nhân viên và KPI**      | Tạo KPI, đánh giá và tích điểm theo thành tích của nhân viên.                          |
+| **Quản lý Khách hàng và Hóa đơn** | Tự động tích điểm cho khách hàng qua các giao dịch và hóa đơn thanh toán.              |
+| **Đổi điểm và Quà tặng**          | Cho phép nhân viên và khách hàng đổi điểm tích lũy lấy các phần thưởng.               |
+| **Báo cáo & Thống kê**            | Báo cáo KPI nhân viên, điểm tích lũy của khách hàng và các giao dịch đổi thưởng.       |
+| **Hệ thống Thông báo**            | Nhắc nhở và thông báo khi đạt KPI mới hoặc điểm tích lũy chạm mức đủ đổi quà.          |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🔧 Công nghệ Sử dụng
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Framework**: Laravel 11.x 🖥️
+- **Frontend**: Blade, Vue.js (tùy chọn) 🌐
+- **Database**: MySQL hoặc PostgreSQL 💾
+- **Authentication**: Laravel Breeze hoặc Laravel Jetstream 🔐
+- **Các Package hỗ trợ**:
+  - **Spatie Laravel Permissions** - Quản lý phân quyền 👥
+  - **Chart.js** hoặc **ECharts** - Biểu đồ báo cáo 📊
+  - **Laravel Excel** - Xuất báo cáo thành file Excel 📑
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📦 Cài đặt và Cấu hình
 
-## Laravel Sponsors
+1. **Clone dự án**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+   ```bash
+   git clone https://github.com/user/toyota-kpi-management.git
+   cd toyota-kpi-management
+   ```
 
-### Premium Partners
+2. **Cài đặt các package phụ thuộc**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+   ```bash
+   composer install
+   npm install && npm run dev
+   ```
 
-## Contributing
+3. **Cấu hình file `.env`**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## Code of Conduct
+4. **Chạy Migration và Seeder**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   ```bash
+   php artisan migrate --seed
+   ```
 
-## Security Vulnerabilities
+5. **Khởi chạy Server**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   ```bash
+   php artisan serve
+   ```
 
-## License
+## 📊 Cấu trúc Tích điểm
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 1. Nhân viên
+- 🏆 **KPI đạt được** ➡️ thêm điểm tích lũy, tùy theo mức độ hoàn thành và tầm quan trọng.
+
+### 2. Khách hàng
+- 💸 **Tích điểm từ hóa đơn** ➡️ Tự động tích điểm với quy tắc điều chỉnh theo tỷ lệ (VD: 100,000 VND = 1 điểm).
+- 🛍️ **Đổi điểm lấy quà** ➡️ Chọn quà từ danh sách quà tặng trong kho.
+
+## 🎁 Quản lý Quà tặng và Đổi điểm
+
+| Loại Quà   | Số điểm yêu cầu | Số lượng |
+|------------|-----------------|----------|
+| Gift Card  | 100 điểm        | Còn 10   |
+| Voucher    | 50 điểm         | Còn 25   |
+| Tặng phẩm  | 200 điểm        | Còn 5    |
+
+Khách hàng và nhân viên có thể dùng điểm tích lũy để đổi lấy các phần quà theo số điểm quy định.
+
+## 📈 Sử dụng
+
+### Nhân viên
+- Thiết lập KPI, theo dõi tiến độ hoàn thành.
+- Kiểm tra điểm tích lũy và lịch sử đổi thưởng.
+
+### Khách hàng
+- Kiểm tra điểm tích lũy, lịch sử giao dịch và đổi quà.
+
+### Quản trị viên
+- Thống kê hiệu suất của nhân viên, hoạt động tích điểm của khách hàng và các giao dịch đổi thưởng.
+
+### Update sắp tới
+- Xây dựng thêm chức năng cho khách hàng lên lịch hẹn và gọi nước khi đang chờ.
+- Cho khách hàng theo dõi và thống kê xem thông tin các lần giao dịch và dịch vụ
+## 💡 Đóng góp
+Nếu bạn muốn đóng góp cho dự án, vui lòng fork dự án, thực hiện thay đổi và gửi pull request! Mọi đóng góp sẽ được ghi nhận và hoan nghênh!
+
+---
